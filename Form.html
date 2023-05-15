@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: rgb(250, 236, 217);
+        }
+        #for{
+            text-align: center;
+            background-color: rgb(186, 149, 100);
+            width: 100%;
+            height: 20px;
+            font-weight: 700;
+        }
+        .all{
+            margin-left: 40px ;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form class="all">
+       <fieldset>
+        <legend id="for"><strong > Form </strong></legend>
+        <br><br>
+        <label for=""><strong>First Name:</strong></label>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Surname">
+        <br><br>
+        <label for=""><strong>Father Name:</strong></label>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Surname">
+        <br><br>
+        <label for=""><strong>Mother:</strong></label>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Surname">
+        <br><br>
+        <label for=""><strong>Gender:</strong></label>
+        <input type="radio" name="Gender"><label for="Male">Male</label>
+        <input type="radio" name="Gender"><label for="Female">Female</label>
+        <br><br>
+        <label for=""><strong>Contact:</strong></label>
+        <input type="number" placeholder="number">
+        <br><br>
+        <label for=""><strong>E-mail:</strong></label>
+        <input type="text" placeholder="E-mail">
+        <br><br>
+        <label for=""><strong>NID No:</strong></label>
+        <input type="number" placeholder="number">
+        <br><br>
+        <label for=""><strong>Blood Group:</strong></label>
+        <input type="radio" name="A+"><label for="A+">A+</label>
+        <input type="radio" name="A+"><label for="A-">A-</label>
+        <input type="radio" name="A+"><label for="B+">B+</label>
+        <input type="radio" name="A+"><label for="B-">B-</label>
+        <input type="radio" name="A+"><label for="O+">O+</label>
+        <input type="radio" name="A+"><label for="O-">O-</label>
+        <input type="radio" name="A+"><label for="AB+">AB+</label>
+        <input type="radio" name="A+"><label for="AB-">AB-</label>
+        <br><br>
+        <label for=""><strong>Hobby:</strong></label>
+        <input type="checkbox"><label for="">Reading</label>
+        <input type="checkbox"><label for="">Traveling</label>
+        <input type="checkbox"><label for="">Sporting</label>
+        <br><br>
+        <label for=""><strong>Subject:</strong></label>
+        <select>
+            <option>Select</option>
+            <option>JEE</option>
+            <option>PHP</option>
+            <option>C#</option>
+            <option>Networking</option>
+            <option>Databased</option>
+        </select>
+        <br><br>
+        <label for=""><strong>Disctription:</strong></label>
+        <br><br>
+        <textarea name="Yourself" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <button>Submit</button> <button>Reset</button>
+
+
+        
+
+       </fieldset>
+    </form>
+    
+</body>
+</html>
