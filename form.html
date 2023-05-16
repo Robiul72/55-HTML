@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .justify{
+            text-align: center;
+            width: 300px;
+            height: 30px;
+        }
+        .center{
+            text-align: right;
+            text-align: justify;
+        }
+      
+        #row{
+            background-color: chocolate;
+            width: 100%;
+            height: 200px;
+            text-align: right;
+            
+        }
+        #row input{
+            margin-right: 450px;
+        }
+        #row {
+            margin-right: 450px;
+        }
+        .cl{
+            margin-top: 20px;
+            text-align: left;
+            margin-left: 40px;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        form{
+            background-color: rgb(143, 239, 105);
+        }
+        .ff{
+            background-color: coral;
+            border: none;
+            margin-left: 530px;  
+        }
+        #ff{
+            margin-left: 30px;
+            background-color: coral;
+            border: none;
+        }
+        input{
+            margin-left: 50px;
+        }
+        div{
+            text-align: right;
+            margin-right: 450px;
+        }
+     
+    </style>
+</head>
+<body>
+    <form action=""><fieldset><br><br>
+        
+        <div >
+            <caption><strong>Student Form</strong></caption><br><br>
+        <label class="center" for="name"><strong>Customer Name:</strong></label>
+        <input type="text"  placeholder="Customer USA">
+        <br><br>
+        <label class="center"  for=""><strong>Part Name:</strong></label>
+        <input type="text"  placeholder="Nozzle">
+        <br><br>
+        <label class="center"  for=""><strong>Part Print Number:</strong></label>
+        <input type="text"   placeholder="PN-1234">
+        <br><br>
+        <label class="center"  for=""><strong>Revision:</strong></label>
+        <input type="text"  placeholder="E">
+        <br><br>
+        <label class="center"  for=""><strong>Part Number</strong></label>
+        <input type="text"  placeholder="PN-1234">
+        <br><br>
+        <label class="center"  for=""><strong>Date of Estimate:</strong></label>
+        <input type="text"   placeholder="xx/xx/xxxx">
+        <br><br>
+        <label class="center" for=""><strong>Estimator Name:</strong></label>
+        <input type="text" placeholder="">
+        <br><br>
+        <label class="center"  for=""><strong>Buyer Name:</strong></label>
+        <input type="text"   placeholder="">
+        <br><br>
+    </div>
+
+        
+            <div id="row">
+            <label for=""><strong>Estimate Base Quantity:</strong></label>
+            <input type="text" placeholder="100">
+            <br>
+            <label  for=""><strong>Scrap Percentage:</strong></label>
+            <input type="text" placeholder="3"><label for="">%</label>
+            <br><br>
+            <label  for=""><strong>Costs Associated with Scrap:</strong></label>
+            <br>
+            <input type="checkbox"><label for="">Material</label>
+            <input type="checkbox"><label for="">Tooling</label>
+            <input type="checkbox"><label for="">Labor</label>
+            <input type="checkbox"><label for="">Non-Machining</label>
+        </div>
+       
+        <br>
+        <button class="ff" ><strong>Clear Form</strong></button>
+        <button id="ff" cellpadding="5px" cellspacing="5px"><strong>Close</strong></button>
+        <br><br>
+    </fieldset>
+    </form>
+</body>
+</html>
