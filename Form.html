@@ -6,88 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-        body{
-            background-color: rgb(250, 236, 217);
-        }
-        #for{
+        .justify{
             text-align: center;
-            background-color: rgb(186, 149, 100);
+            width: 300px;
+            height: 30px;
+        }
+        .center{
+            text-align: right;
+            text-align: justify;
+        }
+      
+        #row{
+            background-color: chocolate;
             width: 100%;
-            height: 20px;
-            font-weight: 700;
+            height: 200px;
+            text-align: right;
+            
         }
-        .all{
-            margin-left: 40px ;
-            margin-right: 40px;
+        #row input{
+            margin-right: 450px;
         }
+        #row {
+            margin-right: 450px;
+        }
+        .cl{
+            margin-top: 20px;
+            text-align: left;
+            margin-left: 40px;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        form{
+            background-color: rgb(143, 239, 105);
+        }
+        .ff{
+            background-color: coral;
+            border: none;
+            margin-left: 530px;  
+        }
+        #ff{
+            margin-left: 30px;
+            background-color: coral;
+            border: none;
+        }
+        input{
+            margin-left: 50px;
+        }
+        div{
+            text-align: right;
+            margin-right: 450px;
+        }
+     
     </style>
 </head>
 <body>
-    <form class="all">
-       <fieldset>
-        <legend id="for"><strong > Form </strong></legend>
+    <form action=""><fieldset><br><br>
+        
+        <div >
+            <caption><strong>Student Form</strong></caption><br><br>
+        <label class="center" for="name"><strong>Customer Name:</strong></label>
+        <input type="text"  placeholder="Customer USA">
         <br><br>
-        <label for=""><strong>First Name:</strong></label>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Surname">
+        <label class="center"  for=""><strong>Part Name:</strong></label>
+        <input type="text"  placeholder="Nozzle">
         <br><br>
-        <label for=""><strong>Father Name:</strong></label>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Surname">
+        <label class="center"  for=""><strong>Part Print Number:</strong></label>
+        <input type="text"   placeholder="PN-1234">
         <br><br>
-        <label for=""><strong>Mother:</strong></label>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Surname">
+        <label class="center"  for=""><strong>Revision:</strong></label>
+        <input type="text"  placeholder="E">
         <br><br>
-        <label for=""><strong>Gender:</strong></label>
-        <input type="radio" name="Gender"><label for="Male">Male</label>
-        <input type="radio" name="Gender"><label for="Female">Female</label>
+        <label class="center"  for=""><strong>Part Number</strong></label>
+        <input type="text"  placeholder="PN-1234">
         <br><br>
-        <label for=""><strong>Contact:</strong></label>
-        <input type="number" placeholder="number">
+        <label class="center"  for=""><strong>Date of Estimate:</strong></label>
+        <input type="text"   placeholder="xx/xx/xxxx">
         <br><br>
-        <label for=""><strong>E-mail:</strong></label>
-        <input type="text" placeholder="E-mail">
+        <label class="center" for=""><strong>Estimator Name:</strong></label>
+        <input type="text" placeholder="">
         <br><br>
-        <label for=""><strong>NID No:</strong></label>
-        <input type="number" placeholder="number">
+        <label class="center"  for=""><strong>Buyer Name:</strong></label>
+        <input type="text"   placeholder="">
         <br><br>
-        <label for=""><strong>Blood Group:</strong></label>
-        <input type="radio" name="A+"><label for="A+">A+</label>
-        <input type="radio" name="A+"><label for="A-">A-</label>
-        <input type="radio" name="A+"><label for="B+">B+</label>
-        <input type="radio" name="A+"><label for="B-">B-</label>
-        <input type="radio" name="A+"><label for="O+">O+</label>
-        <input type="radio" name="A+"><label for="O-">O-</label>
-        <input type="radio" name="A+"><label for="AB+">AB+</label>
-        <input type="radio" name="A+"><label for="AB-">AB-</label>
-        <br><br>
-        <label for=""><strong>Hobby:</strong></label>
-        <input type="checkbox"><label for="">Reading</label>
-        <input type="checkbox"><label for="">Traveling</label>
-        <input type="checkbox"><label for="">Sporting</label>
-        <br><br>
-        <label for=""><strong>Subject:</strong></label>
-        <select>
-            <option>Select</option>
-            <option>JEE</option>
-            <option>PHP</option>
-            <option>C#</option>
-            <option>Networking</option>
-            <option>Databased</option>
-        </select>
-        <br><br>
-        <label for=""><strong>Disctription:</strong></label>
-        <br><br>
-        <textarea name="Yourself" id="" cols="30" rows="10"></textarea>
-        <br><br>
-        <button>Submit</button> <button>Reset</button>
-
+    </div>
 
         
-
-       </fieldset>
+            <div id="row">
+            <label for=""><strong>Estimate Base Quantity:</strong></label>
+            <input type="text" placeholder="100">
+            <br>
+            <label  for=""><strong>Scrap Percentage:</strong></label>
+            <input type="text" placeholder="3"><label for="">%</label>
+            <br><br>
+            <label  for=""><strong>Costs Associated with Scrap:</strong></label>
+            <br>
+            <input type="checkbox"><label for="">Material</label>
+            <input type="checkbox"><label for="">Tooling</label>
+            <input type="checkbox"><label for="">Labor</label>
+            <input type="checkbox"><label for="">Non-Machining</label>
+        </div>
+       
+        <br>
+        <button class="ff" ><strong>Clear Form</strong></button>
+        <button id="ff" cellpadding="5px" cellspacing="5px"><strong>Close</strong></button>
+        <br><br>
+    </fieldset>
     </form>
-    
 </body>
 </html>
