@@ -1,0 +1,9 @@
+.breadcrumb >li+li:before {
+    color: aliceblue;
+    content: " / ";
+    padding: 0 5px;
+        
+}
+.breadcrumb li a{
+    text-decoration:  none;
+}
